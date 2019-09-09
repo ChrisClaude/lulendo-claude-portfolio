@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="767fb00f-6167-4401-be43-b414dbe22993" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/java_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/php_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/pylogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/brent-ninaber-L6EP96_w1Fc-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/brent-ninaber-L6EP96_w1Fc-unsplash.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" afterDir="false" />
@@ -54,6 +57,7 @@
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\img" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ" />
     </key>
   </component>
@@ -115,5 +119,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
