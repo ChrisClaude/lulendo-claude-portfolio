@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="767fb00f-6167-4401-be43-b414dbe22993" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/java_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/php_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/pylogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/brent-ninaber-L6EP96_w1Fc-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/brent-ninaber-L6EP96_w1Fc-unsplash.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helloquence-5fNmWej4tAA-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/work_discipline_IT.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/black_man_software_developer.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/sai-kiran-anagani-5Ntkpxqt54Y-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/codes_at_work_.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tim-johnson-J-yDj62KSxE-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/tim-johnson-J-yDj62KSxE-unsplash.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tim-johnson-g8t03pBlYCs-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/sillicon_valley.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/zoe-reeve-xjJd9fu9OkM-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/zoe-reeve-xjJd9fu9OkM-unsplash.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +88,8 @@
       <workItem from="1567659021711" duration="363000" />
       <workItem from="1567659588537" duration="1245000" />
       <workItem from="1567803497718" duration="6403000" />
+      <workItem from="1568108194094" duration="497000" />
+      <workItem from="1568460306222" duration="1796000" />
     </task>
     <servers />
   </component>
