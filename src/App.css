@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #FC4364;
+    --secondary-color: #444;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+/*NavBar*/
+nav {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+#logo {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    float: right;
+    margin-right: 10%;
+}
+
+nav ul li {
+    margin: 8px;
+    display: inline;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.mobile-nav ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+.mobile-nav li:first-child {
+    margin-top: 2.3rem;
+}
+
+.mobile-nav li {
+    padding: 12px;
+    /*background: #FFFFFF;*/
+}
+
+.mobile-nav li:hover {
+    background: var(--secondary-color);
+}
+
+/*Utility*/
+.box-center {
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
