@@ -96,13 +96,14 @@ nav {
 /* Content */
 .content {
     position: relative;
-    top: -35px;
+    top: -70px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 1.7rem;
-    margin-right: 1.7rem;
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
     padding: 70px 0;
     border-radius: 8px;
+    height: 200vh;
 }
 
 /* Footer */
