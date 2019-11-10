@@ -2,11 +2,12 @@ import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {faBars} from '@fortawesome/free-solid-svg-icons';
-import NavBar from "./components/Layout/NavBar";
+import Header from "./components/Header";
 import "./App.css";
-import Content from "./components/Layout/Content";
-import About from "./components/pages/About";
-import Services from "./components/pages/Services";
+import Content from "./components/Content";
+import About from "./views/About/About";
+import Services from "./views/Services/Services";
+import Footer from "./components/Footer";
 
 library.add(faBars);
 
@@ -16,7 +17,7 @@ class App extends Component {
         return (
             <Fragment>
                 <Router>
-                    <NavBar />
+                    <Header />
                     <Switch>
                         <Route exact path="/about" component={About}/>
                         <Route exact path="/services" component={Services}/>
@@ -25,6 +26,7 @@ class App extends Component {
                         )}/>
                     </Switch>
                 </Router>
+                <Footer/>
             </Fragment>
         );
     }

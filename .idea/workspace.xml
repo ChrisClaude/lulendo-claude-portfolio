@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="767fb00f-6167-4401-be43-b414dbe22993" name="Default Changelist" comment="" />
+    <list default="true" id="767fb00f-6167-4401-be43-b414dbe22993" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/img/bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/About/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Services/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Christ.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Christ.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/NavBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Services.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/black_man_software_developer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/black_man_software_developer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/brent-ninaber-L6EP96_w1Fc-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/brent-ninaber-L6EP96_w1Fc-unsplash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/codes_at_work_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/codes_at_work_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/java_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/java_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/php_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/php_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/pylogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/pylogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/sillicon_valley.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/sillicon_valley.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/tim-johnson-J-yDj62KSxE-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/tim-johnson-J-yDj62KSxE-unsplash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/work_discipline_IT.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/work_discipline_IT.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/zoe-reeve-xjJd9fu9OkM-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/zoe-reeve-xjJd9fu9OkM-unsplash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +61,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vidly_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,14 +75,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\img" />
-      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\views\About" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\components\Layout" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\components\pages" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\assets\img" />
+      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\img" />
+      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ" />
     </key>
   </component>
   <component name="RunDashboard">
