@@ -119,9 +119,10 @@ nav {
 }
 
 .image-box {
+    position: relative;
     display: flex;
     justify-content: center;
-    transform: translate3d(0, -95%, 0);
+    /*transform: translate3d(0, -95%, 0);*/
 }
 
 .round-pic {
@@ -138,30 +139,64 @@ img {
     border-style: none;
 }
 
-.skill-set {
+.resume {
+    padding: 16px 16px 0 16px;
+}
+
+.resume p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social-icons-box {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons-box a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-icons-box a:hover {
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.social-icons {
+    font-size: 2.123rem;
+    margin: 8px 4px;
+}
+
+
+
+.skills-set {
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 16px;
 }
 
-.skill-language {
+.skills-lang {
     /*background-color: #FC4364;*/
     max-width: 210px;
     max-height: 100px;
     padding: 20px;
-    text-align: center;
 }
 
-.skill-language:hover {
+.skills-box {
+    padding: 10px 0;
+}
+
+.skills-lang:hover {
     background-color: rgba(230, 230, 230, 0.35);
 }
 
-.skill-language:active {
+.skills-lang:active {
     background-color: #e91e63;
     color: #e5e5e5;
 }
 
-.skill-language h4 {
+.skills-lang h4 {
     width: 50px;
 }
 
@@ -170,16 +205,22 @@ img {
 }
 
 .btn {
-    padding: 1rem 2rem;
+    display: block;
+    padding: 1rem 1.5rem;
     font-size: 0.875rem;
     line-height: 1.333333;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     box-shadow: 0 2px 2px 0 rgba(233, 30, 99, 0.14), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.12);
     border: none;
     cursor: pointer;
-    display: block;
-    width: 180px;
+    width: 175px;
     text-decoration: none;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary {
@@ -240,3 +281,15 @@ footer svg {
     padding-top: 16px;
     padding-bottom: 16px;
 }
+
+.default-hor-margin {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.default-ver-margin {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
