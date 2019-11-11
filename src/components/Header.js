@@ -19,7 +19,7 @@ class Header extends Component {
                 </nav>
                 <div className="headlines">
                     <h1>Software Development<span>Lulendo.</span></h1>
-                    <p>Lulendo is a brand name of a software company under <Link to="/about" style={{color: "#FFFFFF"}} >Claude Christ</Link></p>
+                    <p>Lulendo Technologies is the brand name under which <Link to="/about" style={{color: "#FFFFFF"}} >Claude Christ</Link> produces Software</p>
                 </div>
             </header>
         );

@@ -4,7 +4,12 @@
     --overlay-color: rgba(0, 0, 0, 0.7);
 }
 
+html * {
+    -webkit-font-smoothing: antialiased;
+}
+
 * {
+    -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -77,8 +82,10 @@ nav {
 }
 
 .headlines {
+    padding-top: 70px;
     padding-left: 15px;
     padding-right: 15px;
+    height: 100%;
 }
 
 .headlines h1 {
@@ -93,6 +100,11 @@ nav {
     display: block;
 }
 
+.headlines p {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
 /* Content */
 .content {
     position: relative;
@@ -104,6 +116,75 @@ nav {
     padding: 70px 0;
     border-radius: 8px;
     height: 200vh;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    transform: translate3d(0, -95%, 0);
+}
+
+.round-pic {
+    width: 100%;
+    margin: auto;
+    max-width: 160px;
+    height: 160px;
+    box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.skill-set {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-language {
+    /*background-color: #FC4364;*/
+    max-width: 210px;
+    max-height: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-language:hover {
+    background-color: rgba(230, 230, 230, 0.35);
+}
+
+.skill-language:active {
+    background-color: #e91e63;
+    color: #e5e5e5;
+}
+
+.skill-language h4 {
+    width: 50px;
+}
+
+.ic-lang {
+    font-size: 50px;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 0.875rem;
+    line-height: 1.333333;
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 2px 0 rgba(233, 30, 99, 0.14), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.12);
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 180px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #e91e63;
 }
 
 /* Footer */

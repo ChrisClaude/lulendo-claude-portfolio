@@ -1,7 +1,12 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+
 import {library} from "@fortawesome/fontawesome-svg-core";
-import {faBars} from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import {faBars, } from '@fortawesome/free-solid-svg-icons';
+
+
 import Header from "./components/Header";
 import "./App.css";
 import Content from "./components/Content";
@@ -9,7 +14,7 @@ import About from "./views/About/About";
 import Services from "./views/Services/Services";
 import Footer from "./components/Footer";
 
-library.add(faBars);
+library.add(fab, faBars);
 
 class App extends Component {
 
