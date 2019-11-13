@@ -9,7 +9,7 @@ class Header extends Component {
                 <nav>
                     <button className="icon-button"><FontAwesomeIcon icon="bars"/></button>
                     <div>
-                        <Link to="/" class="navlinks">Lulendo</Link>
+                        <Link to="/" className="navlinks">Lulendo</Link>
                     </div>
                     <ul className="hidden">
                         <li><Link to="/">Home</Link></li>

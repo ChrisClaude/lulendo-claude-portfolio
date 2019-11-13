@@ -238,9 +238,15 @@ img {
     cursor: pointer;
 }
 
-.skills-lang:hover {
-    background-color: rgba(170, 170, 170, 0.35);
+.selected {
+    background-color: #FC4364;
+    color: #e5e5e5;
 }
+
+/*.skills-lang:hover {
+    color: #333;
+    background-color: rgba(170, 170, 170, 0.35);
+}*/
 
 .skills-box {
     padding: 10px 0;
