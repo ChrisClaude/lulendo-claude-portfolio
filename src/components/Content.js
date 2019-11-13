@@ -13,9 +13,9 @@ class Content extends Component {
                     <h3 className="text-center">Claude De-Tchambila</h3>
                     <h4 className="text-center">Software Developer</h4>
                     <div className="social-icons-box">
-                        <a href="https://www.linkedin.com/in/claude-christ-de-tchambila-a720ba143/"><FontAwesomeIcon icon={['fab', 'linkedin']} className="social-icons"/></a>
-                        <a href="https://github.com/ChClaude"><FontAwesomeIcon icon={['fab', 'github-square']} className="social-icons"/></a>
-                        <a href="https://twitter.com/ClaudeChrist_DT"><FontAwesomeIcon icon={['fab', 'twitter-square']} className="social-icons"/></a>
+                        <a href="https://www.linkedin.com/in/claude-christ-de-tchambila-a720ba143/" className="social-ic-btn"><FontAwesomeIcon icon={['fab', 'linkedin-in']} className="social-icons"/></a>
+                        <a href="https://github.com/ChClaude" className="social-ic-btn"><FontAwesomeIcon icon={['fab', 'github']} className="social-icons"/></a>
+                        <a href="https://twitter.com/ClaudeChrist_DT" className="social-ic-btn"><FontAwesomeIcon icon={['fab', 'twitter']} className="social-icons"/></a>
                     </div>
                     <p>I am a software developer that specializes in Python/Django. I also work on .NET Core with C# to
                         mainly develop web and mobile apps.</p>
