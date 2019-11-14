@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import claude_pic from "./../assets/img/claudes_pic2.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import chsarp from "./../assets/img/c-sharp.svg";
+import black_man from "./../assets/img/black_man_software_developer.jpg";
 
 class Content extends Component {
 
@@ -77,7 +79,7 @@ class Content extends Component {
                                 <h4 id="javascript" onClick={this.handleLanguageClick}>JavaScript</h4>
                             </div>
                             <div className={this.state.langClass[2].label}>
-                                <FontAwesomeIcon icon={['fab', 'js-square']} className="ic-lang"/>
+                                <img src={chsarp} alt="c# logo" className="ic-lang" style={{maxWidth: 55, maxHeight: 55}}/>
                                 <h4 id="csharp" onClick={this.handleLanguageClick}>C#</h4>
                             </div>
                             <div className={this.state.langClass[3].label} id="java">
@@ -87,23 +89,88 @@ class Content extends Component {
                         </div>
                         <div className="gallery">
                             <div id="python-prj" className={this.state.langClass[0].project}>
-                                Python
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src={black_man} alt="lead manager website"/>
+                                    </div>
+                                    <div className="card-body">
+                                        <h4 className="text-center">Lead Manager</h4>
+                                        <b>Description:</b> <span style={{fontStyle: "italic"}}>This is a lead manager web app built with Django</span>
+                                        <br/>
+                                        <b>Link:</b> <a href="https://chclaude.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">Click here to visit the website</a>
+                                    </div>
+                                </div>
+
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src={black_man} alt="lead manager website"/>
+                                    </div>
+                                    <div className="card-body">
+                                        <h4 className="text-center">Mission Amei</h4>
+                                        <b>Description:</b> <span style={{fontStyle: "italic"}}>This is website that I wrote for
+                                        a NGO namely Mission AMEI, built with Django</span>
+                                        <br/>
+                                        <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank" rel="noopener noreferrer">Click here to visit the website</a>
+                                    </div>
+                                </div>
                             </div>
                             <div id="javascript-prj" className={this.state.langClass[1].project}>
-                                JavaScript
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src={black_man} alt="lead manager website"/>
+                                    </div>
+                                    <div className="card-body">
+                                        <h4 className="text-center">Lulendo Portfolio</h4>
+                                        <b>Description:</b> <span style={{fontStyle: "italic"}}>This current website was made by me with React js</span>
+                                        <br/>
+                                        <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank" rel="noopener noreferrer">Click here to see the source code</a>
+                                    </div>
+                                </div>
                             </div>
                             <div id="csharp-prj" className={this.state.langClass[2].project}>
-                                C#
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src={black_man} alt="lead manager website"/>
+                                    </div>
+                                    <div className="card-body">
+                                        <h4 className="text-center">ContosoCrafts</h4>
+                                        <b>Description:</b> <span style={{fontStyle: "italic"}}>This is website that I built on .Net Core
+                                        to list crafts coming from a json service file</span>
+                                        <br/>
+                                        <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank" rel="noopener noreferrer">Click here to visit the website</a>
+                                    </div>
+                                </div>
                             </div>
                             <div id="java-prj" className={this.state.langClass[3].project}>
-                                Java
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src={black_man} alt="lead manager website"/>
+                                    </div>
+                                    <div className="card-body">
+                                        <h4 className="text-center">Car Management App</h4>
+                                        <b>Description:</b> <span style={{fontStyle: "italic"}}>This is a desktop app that I built as part of an assignment</span>
+                                        <br/>
+                                        <b>Link:</b> <a href="https://github.com/ChClaude/CarAgencyManagementApp" target="_blank" rel="noopener noreferrer">Click here to visit the website</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="education">
+                        <h3 className="text-center">EDUCATION</h3>
+                        <i>2018 - 2021</i> - <span>Bachelor of Technology in Application Development</span>
+                        <p><a href="https://www.cput.ac.za/" target="_blank" rel="noopener noreferrer">Cape Peninsula University of Technology</a></p>
+                    </div>
+                    <div>
                         <a href="https://drive.google.com/uc?authuser=0&id=1MrHNZjn2zPfwtQuJji8FfhdxW0-p3qpv&export=download"
                            className="btn btn-primary default-ver-margin">
-                            Download Resume
+                            <FontAwesomeIcon icon="download" /> Download Resume
                         </a>
                     </div>
+                </div>
+                <div className="fixed">
+                    <FontAwesomeIcon icon="paper-plane" id="fixed-icon" />
+                    <span className="tooltiptext">Contact us</span>
                 </div>
             </section>
         );

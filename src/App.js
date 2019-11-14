@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import {library} from "@fortawesome/fontawesome-svg-core";
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import {faBars, } from '@fortawesome/free-solid-svg-icons';
+import {faBars, faDownload, faPaperPlane} from '@fortawesome/free-solid-svg-icons';
 
 
 import Header from "./components/Header";
@@ -14,7 +14,7 @@ import About from "./views/About/About";
 import Services from "./views/Services/Services";
 import Footer from "./components/Footer";
 
-library.add(fab, faBars);
+library.add(fab, faBars, faDownload, faPaperPlane);
 
 class App extends Component {
 
