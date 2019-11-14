@@ -82,7 +82,7 @@ class Content extends Component {
                                 <img src={chsarp} alt="c# logo" className="ic-lang" style={{maxWidth: 55, maxHeight: 55}}/>
                                 <h4 id="csharp" onClick={this.handleLanguageClick}>C#</h4>
                             </div>
-                            <div className={this.state.langClass[3].label} id="java">
+                            <div className={this.state.langClass[3].label} >
                                 <FontAwesomeIcon icon={['fab', 'java']} className="ic-lang" id="java-ic"/>
                                 <h4 id="java" onClick={this.handleLanguageClick}>Java</h4>
                             </div>
@@ -171,6 +171,50 @@ class Content extends Component {
                 <div className="fixed">
                     <FontAwesomeIcon icon="paper-plane" id="fixed-icon" />
                     <span className="tooltiptext">Contact us</span>
+                </div>
+                {/*CONTACT*/}
+                <div className="contact">
+                    <div className="form-card"/>
+                    <div className="form-card">
+                        <h3 className="text-center">Message</h3>
+                        <p className="text-center">We'll respond in less than 48h</p>
+                        <form>
+                            <div className="input-container">
+                                <input type="text" name="firstname" id="firstname"/>
+                                <label htmlFor="firstname">First Name...</label>
+                                <div className="bar"/>
+                            </div>
+                            <div className="input-container">
+                                <input type="text" name="email" id="email"/>
+                                <label htmlFor="email">Email...</label>
+                                <div className="bar"/>
+                            </div>
+                            <textarea name="message" id="message" cols="30" rows="10" />
+                            <div className="button-container">
+                                <button className="btn-outline btn-outline-primary"><span>Send</span></button>
+                            </div>
+                        </form>
+                    </div>
+                    {/*<div className="card alt">
+                        <div className="toggle"/>
+                        <h3 className="title">Register</h3>
+                        <div className="close"/>
+                        <form >
+                            <div className="input-container">
+                                <input type="text" id="label" required/>
+                                <label htmlFor="label">Username</label>
+                                <div className="bar"/>
+                            </div>
+                            <div className="input-container">
+                                <input type="email" id="email" required="required"/>
+                                <label htmlFor="email">Email</label>
+                                <div className="bar"/>
+                            </div>
+                            <div className="button-container">
+                                <button><span>Next</span></button>
+                            </div>
+                        </form>
+                    </div>*/}
                 </div>
             </section>
         );

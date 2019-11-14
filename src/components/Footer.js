@@ -4,11 +4,11 @@ class Footer extends Component {
     render() {
         return (
             <footer className="default-hor-padding">
-                <ul>
+                <ul className="bottom-links">
                     <li>CREATIVE CLAUDE</li>
-                    <li>ABOUT US</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT US</li>
                     <li>SERVICES</li>
-                    <li>PROJECTS</li>
                 </ul>
                 <div className="copyright text-center">&copy; 2019, made with
                     <svg>
