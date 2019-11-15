@@ -182,7 +182,7 @@ class Content extends Component {
                     <div className="form-card">
                         <h3 className="text-center" id="contact">CONTACT</h3>
                         <p className="text-center">We'll respond in less than 48h</p>
-                        <form className="go-bottom" name="contact" method="POST" data-netlify="true">
+                        <form className="go-bottom" action="POST" data-netlify="true">
                             <div>
                                 <input type="text" name="name" id="name" required/>
                                 <label htmlFor="name">First name...</label>
