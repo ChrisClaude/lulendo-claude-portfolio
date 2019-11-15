@@ -267,14 +267,14 @@ img {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
     margin: 16px 0;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
@@ -320,6 +320,7 @@ img {
     border-radius: 100%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: 0.3s ease;
+    z-index: 3;
 }
 
 #fixed-icon {
@@ -359,24 +360,90 @@ img {
     margin: 10px 0;
 }
 
-.form-card .input-container input {
-    outline: none;
-    background: #dddddd;
+.contact form {
+    padding: 0 8px;
+}
+
+form > div {
+    /*background-color: #3498db;*/
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+form > div > label {
+    position: absolute;
+}
+
+form input, form textarea {
+    display: inline-block;
     width: 100%;
-    height: 40px;
-    border: 0;
-    color: #212121;
-    font-size: 24px;
-    font-weight: 400;
+    border: 2px solid gray;
+    background: none;
+    position: relative;
+    z-index: 1;
+    padding: 12px;
+    font-size: 16px;
+    outline: 0;
+    border-radius: 5px;
 }
 
-.form-card .input-container input:focus ~ label {
-    color: #9d9d9d;
-    -webkit-transform: translate(-12%, -50%) scale(0.75);
-    transform: translate(-12%, -50%) scale(0.75);
+form textarea {
+    height: 100px;
 }
 
 
+form label {
+    transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    position: absolute;
+    color: #999;
+    padding: 7px 6px;
+}
+
+form textarea {
+    display: block;
+    resize: vertical;
+}
+
+form input:valid, form textarea:valid {
+    background: white;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+form input:focus + label, form textarea:focus + label {
+    background: var(--primary-color);
+    color: white;
+    font-size: 70%;
+    padding: 1px 6px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+
+form.go-bottom input, form.go-bottom textarea {
+    padding: 12px 12px 12px 12px;
+}
+
+form.go-bottom label {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+form.go-bottom input:focus, form.go-bottom textarea:focus {
+    padding: 8px 6px 25px 6px;
+}
+
+form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
+    top: 100%;
+    margin-top: -16px;
+    padding-bottom: 10px;
+}
 
 /* Footer */
 footer {
@@ -413,14 +480,13 @@ footer svg {
 /*Utility*/
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 14px 28px;
     font-size: 0.875rem;
     line-height: 1.333333;
     border-radius: 0.3rem;
     box-shadow: 1px 3px 1px 0 rgba(233, 30, 99, 0.17), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.12);
     border: none;
     cursor: pointer;
-    width: 175px;
     text-align: center;
     text-decoration: none;
 }
@@ -517,5 +583,3 @@ footer svg {
     border-style: solid;
     border-color: transparent transparent transparent black;
 }
-
-

@@ -79,10 +79,11 @@ class Content extends Component {
                                 <h4 id="javascript" onClick={this.handleLanguageClick}>JavaScript</h4>
                             </div>
                             <div className={this.state.langClass[2].label}>
-                                <img src={chsarp} alt="c# logo" className="ic-lang" style={{maxWidth: 55, maxHeight: 55}}/>
+                                <img src={chsarp} alt="c# logo" className="ic-lang"
+                                     style={{maxWidth: 55, maxHeight: 55}}/>
                                 <h4 id="csharp" onClick={this.handleLanguageClick}>C#</h4>
                             </div>
-                            <div className={this.state.langClass[3].label} >
+                            <div className={this.state.langClass[3].label}>
                                 <FontAwesomeIcon icon={['fab', 'java']} className="ic-lang" id="java-ic"/>
                                 <h4 id="java" onClick={this.handleLanguageClick}>Java</h4>
                             </div>
@@ -97,7 +98,8 @@ class Content extends Component {
                                         <h4 className="text-center">Lead Manager</h4>
                                         <b>Description:</b> <span style={{fontStyle: "italic"}}>This is a lead manager web app built with Django</span>
                                         <br/>
-                                        <b>Link:</b> <a href="https://chclaude.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">Click here to visit the website</a>
+                                        <b>Link:</b> <a href="https://chclaude.pythonanywhere.com/" target="_blank"
+                                                        rel="noopener noreferrer">Click here to visit the website</a>
                                     </div>
                                 </div>
 
@@ -110,7 +112,8 @@ class Content extends Component {
                                         <b>Description:</b> <span style={{fontStyle: "italic"}}>This is website that I wrote for
                                         a NGO namely Mission AMEI, built with Django</span>
                                         <br/>
-                                        <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank" rel="noopener noreferrer">Click here to visit the website</a>
+                                        <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank"
+                                                        rel="noopener noreferrer">Click here to visit the website</a>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +126,8 @@ class Content extends Component {
                                         <h4 className="text-center">Lulendo Portfolio</h4>
                                         <b>Description:</b> <span style={{fontStyle: "italic"}}>This current website was made by me with React js</span>
                                         <br/>
-                                        <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank" rel="noopener noreferrer">Click here to see the source code</a>
+                                        <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank"
+                                                        rel="noopener noreferrer">Click here to see the source code</a>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +141,8 @@ class Content extends Component {
                                         <b>Description:</b> <span style={{fontStyle: "italic"}}>This is website that I built on .Net Core
                                         to list crafts coming from a json service file</span>
                                         <br/>
-                                        <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank" rel="noopener noreferrer">Click here to visit the website</a>
+                                        <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank"
+                                                        rel="noopener noreferrer">Click here to visit the website</a>
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +155,9 @@ class Content extends Component {
                                         <h4 className="text-center">Car Management App</h4>
                                         <b>Description:</b> <span style={{fontStyle: "italic"}}>This is a desktop app that I built as part of an assignment</span>
                                         <br/>
-                                        <b>Link:</b> <a href="https://github.com/ChClaude/CarAgencyManagementApp" target="_blank" rel="noopener noreferrer">Click here to visit the website</a>
+                                        <b>Link:</b> <a href="https://github.com/ChClaude/CarAgencyManagementApp"
+                                                        target="_blank" rel="noopener noreferrer">Click here to visit
+                                        the website</a>
                                     </div>
                                 </div>
                             </div>
@@ -159,62 +166,42 @@ class Content extends Component {
                     <div className="education">
                         <h3 className="text-center">EDUCATION</h3>
                         <i>2018 - 2021</i> - <span>Bachelor of Technology in Application Development</span>
-                        <p><a href="https://www.cput.ac.za/" target="_blank" rel="noopener noreferrer">Cape Peninsula University of Technology</a></p>
+                        <p><a href="https://www.cput.ac.za/" target="_blank" rel="noopener noreferrer">Cape Peninsula
+                            University of Technology</a></p>
                     </div>
                     <div>
                         <a href="https://drive.google.com/uc?authuser=0&id=1MrHNZjn2zPfwtQuJji8FfhdxW0-p3qpv&export=download"
                            className="btn btn-primary default-ver-margin">
-                            <FontAwesomeIcon icon="download" /> Download Resume
+                            <FontAwesomeIcon icon="download"/> Download Resume
                         </a>
                     </div>
-                </div>
-                <div className="fixed">
-                    <FontAwesomeIcon icon="paper-plane" id="fixed-icon" />
-                    <span className="tooltiptext">Contact us</span>
                 </div>
                 {/*CONTACT*/}
                 <div className="contact">
                     <div className="form-card"/>
                     <div className="form-card">
-                        <h3 className="text-center">Message</h3>
+                        <h3 className="text-center">CONTACT</h3>
                         <p className="text-center">We'll respond in less than 48h</p>
-                        <form>
-                            <div className="input-container">
-                                <input type="text" name="firstname" id="firstname"/>
-                                <label htmlFor="firstname">First Name...</label>
-                                <div className="bar"/>
+                        <form className="go-bottom">
+                            <div>
+                                <input type="text" name="name" id="name" required/>
+                                <label htmlFor="name">First name...</label>
                             </div>
-                            <div className="input-container">
-                                <input type="text" name="email" id="email"/>
+                            <div>
+                                <input type="email" name="email" id="email" required/>
                                 <label htmlFor="email">Email...</label>
-                                <div className="bar"/>
                             </div>
-                            <textarea name="message" id="message" cols="30" rows="10" />
-                            <div className="button-container">
-                                <button className="btn-outline btn-outline-primary"><span>Send</span></button>
+                            <div>
+                                <textarea name="message" id="message" required />
+                                <label htmlFor="message" id="label">Message</label>
                             </div>
+                            <button className="btn btn-primary"><FontAwesomeIcon style={{marginRight: "3px", fontSize: "16px"}} icon="paper-plane"/>Send</button>
                         </form>
                     </div>
-                    {/*<div className="card alt">
-                        <div className="toggle"/>
-                        <h3 className="title">Register</h3>
-                        <div className="close"/>
-                        <form >
-                            <div className="input-container">
-                                <input type="text" id="label" required/>
-                                <label htmlFor="label">Username</label>
-                                <div className="bar"/>
-                            </div>
-                            <div className="input-container">
-                                <input type="email" id="email" required="required"/>
-                                <label htmlFor="email">Email</label>
-                                <div className="bar"/>
-                            </div>
-                            <div className="button-container">
-                                <button><span>Next</span></button>
-                            </div>
-                        </form>
-                    </div>*/}
+                </div>
+                <div className="fixed">
+                    <FontAwesomeIcon icon="paper-plane" id="fixed-icon"/>
+                    <span className="tooltiptext">Contact us</span>
                 </div>
             </section>
         );
