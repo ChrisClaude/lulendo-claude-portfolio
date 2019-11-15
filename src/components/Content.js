@@ -180,7 +180,7 @@ class Content extends Component {
                 <div className="contact">
                     <div className="form-card"/>
                     <div className="form-card">
-                        <h3 className="text-center">CONTACT</h3>
+                        <h3 className="text-center" id="contact">CONTACT</h3>
                         <p className="text-center">We'll respond in less than 48h</p>
                         <form className="go-bottom">
                             <div>
@@ -193,14 +193,14 @@ class Content extends Component {
                             </div>
                             <div>
                                 <textarea name="message" id="message" required />
-                                <label htmlFor="message" id="label">Message</label>
+                                <label htmlFor="message">Message</label>
                             </div>
                             <button className="btn btn-primary"><FontAwesomeIcon style={{marginRight: "3px", fontSize: "16px"}} icon="paper-plane"/>Send</button>
                         </form>
                     </div>
                 </div>
                 <div className="fixed">
-                    <FontAwesomeIcon icon="paper-plane" id="fixed-icon"/>
+                    <a href="#contact"><FontAwesomeIcon icon="paper-plane" id="fixed-icon"/></a>
                     <span className="tooltiptext">Contact us</span>
                 </div>
             </section>
