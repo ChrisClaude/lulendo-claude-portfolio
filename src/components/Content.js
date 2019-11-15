@@ -199,9 +199,9 @@ class Content extends Component {
                                 <div data-netlify-recaptcha="true" />
                             </div>
                             <div className="form-btns">
-                                <input className="btn btn-primary" type="submit"><FontAwesomeIcon
+                                <button className="btn btn-primary" type="submit"><FontAwesomeIcon
                                     style={{marginRight: "3px", fontSize: "16px"}} icon="paper-plane"/>Send
-                                </input>
+                                </button>
                                 <button className="btn btn-primary" type="reset">Reset
                                 </button>
                             </div>
