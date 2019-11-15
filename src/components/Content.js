@@ -182,7 +182,7 @@ class Content extends Component {
                     <div className="form-card">
                         <h3 className="text-center" id="contact">CONTACT</h3>
                         <p className="text-center">We'll respond in less than 48h</p>
-                        <form className="go-bottom">
+                        <form className="go-bottom" name="contact" method="POST" data-netlify="true">
                             <div>
                                 <input type="text" name="name" id="name" required/>
                                 <label htmlFor="name">First name...</label>
@@ -195,7 +195,16 @@ class Content extends Component {
                                 <textarea name="message" id="message" required />
                                 <label htmlFor="message">Message</label>
                             </div>
-                            <button className="btn btn-primary"><FontAwesomeIcon style={{marginRight: "3px", fontSize: "16px"}} icon="paper-plane"/>Send</button>
+                            <div>
+                                <div data-netlify-recaptcha="true" />
+                            </div>
+                            <div className="form-btns">
+                                <button className="btn btn-primary" type="submit"><FontAwesomeIcon
+                                    style={{marginRight: "3px", fontSize: "16px"}} icon="paper-plane"/>Send
+                                </button>
+                                <button className="btn btn-primary" type="reset">Reset
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>

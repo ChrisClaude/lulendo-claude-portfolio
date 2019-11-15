@@ -445,6 +445,16 @@ form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
     padding-bottom: 10px;
 }
 
+.form-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-btns button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 /* Footer */
 footer {
     padding-bottom: 25px;
