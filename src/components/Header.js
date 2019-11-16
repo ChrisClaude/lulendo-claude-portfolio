@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 class Header extends Component {
 
     state = {
-        phoneLinks: "phone-links"
+        phoneLinks: "phone-links close"
     };
 
     handleNavClicks = () => {
@@ -18,7 +18,7 @@ class Header extends Component {
         return (
             <header>
                 <nav>
-                    <Link to="/" className="navlinks">Lulendo</Link>
+                    <Link to="/" className="navlinks" id="brand">Lulendo</Link>
                     <div>
                         <button className="icon-button" onClick={this.handleNavClicks}><FontAwesomeIcon icon="bars"/></button>
                     </div>
