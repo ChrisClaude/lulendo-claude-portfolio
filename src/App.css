@@ -70,8 +70,11 @@ nav {
 }
 
 .navlinks {
+    display: inline-block;
     color: white;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
 #brand {
@@ -505,6 +508,7 @@ footer svg {
 }
 
 .bottom-links {
+    color: #333333;
     display: grid;
     grid-template-columns: auto;
 }
@@ -637,4 +641,8 @@ footer svg {
 
 .close li {
     opacity: 0;
+}
+
+.def-color {
+    color: var(--secondary-color);
 }

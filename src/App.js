@@ -10,9 +10,11 @@ import {faBars, faDownload, faPaperPlane, faTimes} from '@fortawesome/free-solid
 import Header from "./components/Header";
 import "./App.css";
 import Content from "./components/Content";
-import About from "./views/About/About";
-import Services from "./views/Services/Services";
+import About from "./views/About";
+import Services from "./views/Services";
 import Footer from "./components/Footer";
+import Contact from "./views/Contact";
+import Articles from "./views/Articles";
 
 library.add(fab, faBars, faDownload, faPaperPlane, faTimes);
 
@@ -24,14 +26,16 @@ class App extends Component {
                 <Router>
                     <Header />
                     <Switch>
+                        <Route exact path="/articles" component={Articles}/>
+                        <Route exact path="/contact" component={Contact}/>
                         <Route exact path="/about" component={About}/>
                         <Route exact path="/services" component={Services}/>
                         <Route exact path="/" render={ props => (
                             <Content/>
                         )}/>
                     </Switch>
+                    <Footer/>
                 </Router>
-                <Footer/>
             </Fragment>
         );
     }

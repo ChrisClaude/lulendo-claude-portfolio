@@ -33,10 +33,10 @@ class Header extends Component {
                 </nav>
                 <div className={this.state.phoneLinks}>
                     <ul>
-                        <li>Services</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Projects</li>
+                        <li><Link to="/services" className="navlinks">Services</Link></li>
+                        <li><Link to="/about" className="navlinks">About</Link></li>
+                        <li><Link to="/contact" className="navlinks">Contact</Link></li>
+                        <li><Link to="/articles" className="navlinks">Articles</Link></li>
                     </ul>
                 </div>
                 <div className="headlines">

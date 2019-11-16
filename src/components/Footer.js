@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 
 class Footer extends Component {
     render() {
         return (
             <footer className="default-hor-padding">
                 <ul className="bottom-links">
-                    <li>CREATIVE CLAUDE</li>
-                    <li>ABOUT</li>
-                    <li>CONTACT US</li>
-                    <li>SERVICES</li>
+                    <li><Link to="articles" className="navlinks def-color">CREATIVE CLAUDE</Link></li>
+                    <li><Link to="/about" className="navlinks def-color">ABOUT</Link></li>
+                    <li><Link to="/contact" className="navlinks def-color">CONTACT US</Link></li>
+                    <li><Link to="/services" className="navlinks def-color">SERVICES</Link></li>
                 </ul>
                 <div className="copyright text-center">&copy; 2019, made with
                     <svg>

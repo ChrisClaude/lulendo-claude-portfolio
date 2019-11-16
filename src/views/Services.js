@@ -4,7 +4,7 @@ class Services extends Component {
     render() {
         return (
             <div>
-                Services
+                Services, this section is still in development
             </div>
         );
     }
