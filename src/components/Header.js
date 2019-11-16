@@ -5,13 +5,16 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 class Header extends Component {
 
     state = {
-        phoneLinks: "phone-links close"
+        phoneLinks: "phone-links close",
+        navIcon: "bars"
     };
 
     handleNavClicks = () => {
         let phoneLinks = this.state.phoneLinks;
-        phoneLinks = phoneLinks.search("close") > 0 ? "phone-links open" : "phone-links close";
-        this.setState({phoneLinks});
+        let navIcon = this.state.navIcon;
+        navIcon = navIcon.search("bars") > -1 ? "times" : "bars";
+        phoneLinks = phoneLinks.search("close") > -1 ? "phone-links open" : "phone-links close";
+        this.setState({phoneLinks, navIcon});
     };
 
     render() {
@@ -20,7 +23,7 @@ class Header extends Component {
                 <nav>
                     <Link to="/" className="navlinks" id="brand">Lulendo</Link>
                     <div>
-                        <button className="icon-button" onClick={this.handleNavClicks}><FontAwesomeIcon icon="bars"/></button>
+                        <button className="icon-button" onClick={this.handleNavClicks}><FontAwesomeIcon icon={this.state.navIcon}/></button>
                     </div>
                     <ul className="hide">
                         <li><Link to="/">Home</Link></li>
