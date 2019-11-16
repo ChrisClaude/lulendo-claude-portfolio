@@ -8,9 +8,9 @@ class Content extends Component {
 
     state = {
         langClass: [{label: "skills-lang text-center selected", project: ""},
-            {label: "skills-lang text-center", project: "hidden"},
-            {label: "skills-lang text-center", project: "hidden"},
-            {label: "skills-lang text-center", project: "hidden"}]
+            {label: "skills-lang text-center", project: "hide"},
+            {label: "skills-lang text-center", project: "hide"},
+            {label: "skills-lang text-center", project: "hide"}]
     };
 
     handleLanguageClick = (e) => {
@@ -42,7 +42,7 @@ class Content extends Component {
                 continue;
             }
             langClass[i].label = "skills-lang text-center";
-            langClass[i].project = "hidden";
+            langClass[i].project = "hide";
         }
         this.setState(langClass);
     }
@@ -183,7 +183,7 @@ class Content extends Component {
                         <h3 className="text-center" id="contact">CONTACT</h3>
                         <p className="text-center">We'll respond in less than 48h</p>
                         <form className="go-bottom" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-                            <input type="hidden" name="form-name" value="contact" />
+                            <input type="hide" name="form-name" value="contact" />
                             <div>
                                 <input type="text" name="name" id="name" required/>
                                 <label htmlFor="name">First name...</label>
