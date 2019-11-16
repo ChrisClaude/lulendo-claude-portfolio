@@ -51,7 +51,7 @@ class Content extends Component {
         return (
             <section className="content">
                 <div className="image-box">
-                    <img src={claude_pic} alt="Claude Christ's pic" className="round-pic"/>
+                    <img src={claude_pic} alt="Claude Christ's pic" id="claude_christ" className="round-pic"/>
                 </div>
                 <div className="resume">
                     <h3 className="text-center">Claude De-Tchambila</h3>
