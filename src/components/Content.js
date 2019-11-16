@@ -181,7 +181,7 @@ class Content extends Component {
                     <div className="form-card"/>
                     <div className="form-card">
                         <h3 className="text-center" id="contact">CONTACT</h3>
-                        <p className="text-center">We'll respond in less than 48h</p>
+                        <p className="text-center">We'll respond in less than 48 hours</p>
                         <form className="go-bottom" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                             <input type="hidden" name="form-name" value="contact" />
                             <div>
