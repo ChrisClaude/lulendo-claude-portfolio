@@ -103,7 +103,7 @@ nav {
     -webkit-tap-highlight-color: transparent;
 }
 
-.icon-button:focus {
+.icon-button:active {
     background-color: rgba(180, 180, 180, 0.35);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -249,7 +249,9 @@ img {
 
 .skills-set {
     display: grid;
-    grid-template-columns: 130px 130px;
+    grid-template-columns: 120px 120px;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
     justify-content: center;
     margin-top: 8px;
     margin-bottom: 16px;
@@ -260,11 +262,11 @@ img {
 }
 
 .skills-lang {
-    margin-left: 8px;
-    margin-right: 8px;
-    padding: 10px;
+    padding: 25px 25px 0 25px;
     border-radius: 7px;
     cursor: pointer;
+    overflow: hidden;
+    height: 120px;
 }
 
 .selected {
@@ -472,6 +474,7 @@ form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
 .form-btns {
     display: flex;
     flex-direction: column;
+    height: 20vh;
 }
 
 .form-btns button {
