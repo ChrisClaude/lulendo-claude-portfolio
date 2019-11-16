@@ -13,6 +13,30 @@
     <title>Lulendo | Claude C DE-TCHAMBILA</title>
 </head>
 <body>
+<form class="go-bottom" name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <div>
+        <input type="text" name="name" id="name" required/>
+        <label for="name">First name...</label>
+    </div>
+    <div>
+        <input type="email" name="email" id="email" required/>
+        <label for="email">Email...</label>
+    </div>
+    <div>
+        <textarea name="message" id="message" required >
+        </textarea>
+        <label for="message">Message</label>
+    </div>
+    <div>
+        <div data-netlify-recaptcha="true" ></div>
+    </div>
+    <div class="form-btns">
+        <button class="btn btn-primary" type="submit">Send
+        </button>
+        <button class="btn btn-primary" type="reset">Reset
+        </button>
+    </div>
+</form>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
 
