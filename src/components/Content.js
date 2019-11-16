@@ -183,7 +183,7 @@ class Content extends Component {
                         <h3 className="text-center" id="contact">CONTACT</h3>
                         <p className="text-center">We'll respond in less than 48h</p>
                         <form className="go-bottom" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-                            <input type="hide" name="form-name" value="contact" />
+                            <input type="hidden" name="form-name" value="contact" />
                             <div>
                                 <input type="text" name="name" id="name" required/>
                                 <label htmlFor="name">First name...</label>
