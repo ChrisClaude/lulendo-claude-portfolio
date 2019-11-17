@@ -6,10 +6,11 @@ class Footer extends Component {
         return (
             <footer className="default-hor-padding">
                 <ul className="bottom-links">
-                    <li><Link to="articles" className="navlinks def-color">CREATIVE CLAUDE</Link></li>
-                    <li><Link to="/about" className="navlinks def-color">ABOUT</Link></li>
-                    <li><Link to="/contact" className="navlinks def-color">CONTACT US</Link></li>
+                    <li><Link to="/" className="navlinks def-color">CREATIVE CLAUDE</Link></li>
                     <li><Link to="/services" className="navlinks def-color">SERVICES</Link></li>
+                    <li><Link to="/about" className="navlinks def-color">ABOUT</Link></li>
+                    <li><Link to="/contact" className="navlinks def-color">CONTACT</Link></li>
+                    <li><Link to="articles" className="navlinks def-color">ARTICLES</Link></li>
                 </ul>
                 <div className="copyright text-center">&copy; 2019, made with
                     <svg>

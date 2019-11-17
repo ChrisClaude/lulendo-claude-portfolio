@@ -66,7 +66,8 @@ class Content extends Component {
                             icon={['fab', 'twitter']} className="social-icons"/></a>
                     </div>
                     <p>I am a software developer that specializes in Python/Django. I also work on .NET Core with C# to
-                        mainly develop web and mobile apps.</p>
+                        develop web and mobile apps. I grow every day with the different development tasks that I face. Also, my aim is
+                    to develop as a software developer in order to build amazing software for the world.</p>
                     <div className="skills-box">
                         <h3 className="text-center">SKILLS & PROJECTS</h3>
                         <div className="skills-set">
