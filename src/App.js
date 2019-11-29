@@ -18,6 +18,7 @@ import {
 
 
 import Header from "./components/Header";
+import Announcement from "./components/Announcement";
 import "./App.css";
 import Content from "./components/Content";
 import About from "./views/About";
@@ -49,6 +50,7 @@ class App extends Component {
         return (
             <Fragment>
                 <Router>
+                   <Announcement message="This website is still in development" />
                     <Switch>
                         <Route exact path="/articles" component={Articles}/>
                         <Route exact path="/contact" component={Contact}/>

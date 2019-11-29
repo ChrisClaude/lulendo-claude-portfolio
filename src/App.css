@@ -591,6 +591,24 @@ footer svg {
     margin-top: 15px;
 }
 
+#ann-box {
+    padding: 8px 0 8px 0;
+}
+
+#ann-box-btn {
+    margin-left: 16px;
+    border: none;
+    background-color: var(--primary-color);
+    padding: 8px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#ann-box-btn:hover {
+    background-color: rgba(3, 66, 137, 0.79);
+}
+
 /*Utility*/
 .btn {
     display: inline-block;
