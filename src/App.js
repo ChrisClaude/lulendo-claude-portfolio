@@ -47,10 +47,11 @@ class App extends Component {
     };
 
     render() {
+        const announcement = "This website is still in development, Please contact christ.tchambila@gmail.com";
         return (
             <Fragment>
                 <Router>
-                   <Announcement message="This website is still in development" />
+                   <Announcement message={announcement} />
                     <Switch>
                         <Route exact path="/articles" component={Articles}/>
                         <Route exact path="/contact" component={Contact}/>
