@@ -38,7 +38,7 @@ header {
 }
 
 .phone-links {
-    background-color: rgba(3, 66, 137, 0.12);
+    background-color: rgba(3, 66, 137, 0.32);
     width: 100%;
     z-index: 3;
     font-size: 1.52rem;
@@ -606,7 +606,7 @@ footer svg {
 }
 
 #ann-box-btn:hover {
-    background-color: rgba(3, 66, 137, 0.79);
+    background-color: rgba(3, 66, 137, 0.89);
 }
 
 /*Utility*/
