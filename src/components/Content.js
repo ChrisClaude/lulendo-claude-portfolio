@@ -57,7 +57,7 @@ class Content extends Component {
                     <h3 className="text-center">Claude De-Tchambila</h3>
                     <h4 className="text-center">Software Developer</h4>
                     <div className="social-icons-box">
-                        <a href="https://www.linkedin.com/in/claude-christ-de-tchambila-a720ba143/"
+                        <a href="https://www.linkedin.com/in/claude-de-tchambila-a720ba143/"
                            className="social-ic-btn"><FontAwesomeIcon icon={['fab', 'linkedin-in']}
                                                                       className="social-icons"/></a>
                         <a href="https://github.com/ChClaude" className="social-ic-btn"><FontAwesomeIcon
