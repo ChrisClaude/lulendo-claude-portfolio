@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import claude_pic from "./../assets/img/claudes_pic2.jpg";
+import mypic from "./../assets/img/mypic.jpeg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import chsarp from "./../assets/img/c-sharp.svg";
 import black_man from "./../assets/img/black_man_software_developer.jpg";
+import century_airlines from "./../assets/img/century_airlines.PNG";
 
 class Content extends Component {
 
@@ -51,7 +53,7 @@ class Content extends Component {
         return (
             <section className="content">
                 <div className="image-box">
-                    <img src={claude_pic} alt="Claude Christ's pic" id="claude_christ" className="round-pic"/>
+                    <img src={mypic} alt="Claude Christ's pic" id="claude_christ" className="round-pic"/>
                 </div>
                 <div className="resume">
                     <h3 className="text-center">Claude De-Tchambila</h3>
@@ -135,12 +137,12 @@ class Content extends Component {
                             <div id="csharp-prj" className={this.state.langClass[2].project}>
                                 <div className="card">
                                     <div className="card-header">
-                                        <img src={black_man} alt="lead manager website"/>
+                                        <img src={century_airlines} alt="lead manager website"/>
                                     </div>
                                     <div className="card-body">
-                                        <h4 className="text-center">ContosoCrafts</h4>
-                                        <b>Description:</b> <span style={{fontStyle: "italic"}}>This is website that I built on .Net Core
-                                        to list crafts coming from a json service file</span>
+                                        <h4 className="text-center">Century Airlines</h4>
+                                        <b>Description:</b> <span style={{fontStyle: "italic"}}>This is a web app that I built on top of ASP.Net Core
+                                        for flight bookings</span>
                                         <br/>
                                         <b>Link:</b> <a href="https://www.missionmaei.org/" target="_blank"
                                                         rel="noopener noreferrer">Click here to visit the website</a>
@@ -166,13 +168,16 @@ class Content extends Component {
                     </div>
                     <div className="education">
                         <h3 className="text-center">EDUCATION</h3>
-                        <i>2018 - 2021</i> - <span>Bachelor of Technology in Application Development</span>
+                        <i>2018 - 2020</i> - <span>Bachelor of Technology in Application Development</span>
                         <p><a href="https://www.cput.ac.za/" target="_blank" rel="noopener noreferrer">Cape Peninsula
                             University of Technology</a></p>
+                        <i>2015</i> - <span>Matric</span>
+                        <p><a href="https://www.facebook.com/pages/category/Elementary-School/Ecole-Priv%C3%A9e-Fernand-Nathan-688872191125422/"
+                              target="_blank" rel="noopener noreferrer">Fernand Nathan</a></p>
                     </div>
                     <div>
                         <a href="https://drive.google.com/uc?authuser=0&id=1MrHNZjn2zPfwtQuJji8FfhdxW0-p3qpv&export=download"
-                           className="btn btn-primary default-ver-margin">
+                           className="btn btn-primary default-ver-margin" >
                             <FontAwesomeIcon icon="download"/> Download Resume
                         </a>
                     </div>

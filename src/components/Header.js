@@ -7,8 +7,7 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <NavBar OnNavClicks={this.props.OnNavClicks} navIcon={this.props.navIcon}
-                        phoneLinks={this.props.phoneLinks}/>
+                <NavBar />
                 <div className="headlines">
                     <h1>Software Development<span>Lulendo.</span></h1>
                     <p>Lulendo Technologies is the brand name under which <a href="#claude_christ"
@@ -19,12 +18,6 @@ class Header extends Component {
         );
     }
 }
-
-Header.propTypes = {
-    OnNavClicks: PropTypes.func.isRequired,
-    navIcon: PropTypes.string.isRequired,
-    phoneLinks: PropTypes.string.isRequired
-};
 
 
 export default Header;

@@ -32,20 +32,6 @@ library.add(fab, faBars, faDownload, faPaperPlane, faTimes, faPaintBrush, faCode
 
 class App extends Component {
 
-    state = {
-        phoneLinks: "phone-links close",
-        navIcon: "bars"
-    };
-
-
-    handleNavClicks = () => {
-        let phoneLinks = this.state.phoneLinks;
-        let navIcon = this.state.navIcon;
-        navIcon = navIcon.search("bars") > -1 ? "times" : "bars";
-        phoneLinks = phoneLinks.search("close") > -1 ? "phone-links open" : "phone-links close";
-        this.setState({phoneLinks, navIcon});
-    };
-
     render() {
         const announcement = "This website is still in development, Please contact christ.tchambila@gmail.com";
         return (
@@ -58,13 +44,13 @@ class App extends Component {
                         <Route exact path="/about" component={About}/>
                         <Route exact path="/services" render={props => (
                             <Fragment>
-                                <NavBar OnNavClicks={this.handleNavClicks} navIcon={this.state.navIcon} phoneLinks={this.state.phoneLinks}/>
+                                <NavBar />
                                 <Services/>
                             </Fragment>
                         )}/>
                         <Route exact path="/" render={props => (
                             <Fragment>
-                                <Header OnNavClicks={this.handleNavClicks} navIcon={this.state.navIcon} phoneLinks={this.state.phoneLinks}/>
+                                <Header />
                                 <Content/>
                             </Fragment>
                         )}/>

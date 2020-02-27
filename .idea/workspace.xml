@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="767fb00f-6167-4401-be43-b414dbe22993" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/Claude_s_CV.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/century_airlines.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/mypic.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Christ.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Christ.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +38,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/mission_amei" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,11 +67,11 @@
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\assets" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\assets\img" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\views" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\views\About" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\components\Layout" />
-      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\components\pages" />
     </key>
   </component>
   <component name="RunManager">
@@ -114,7 +126,12 @@
       <workItem from="1574009231982" duration="10812000" />
       <workItem from="1574678768065" duration="50000" />
       <workItem from="1575049861180" duration="5705000" />
-      <workItem from="1582392257046" duration="750000" />
+      <workItem from="1582392257046" duration="1385000" />
+      <workItem from="1582480859797" duration="1879000" />
+      <workItem from="1582516928018" duration="443000" />
+      <workItem from="1582603915870" duration="595000" />
+      <workItem from="1582803155080" duration="8831000" />
+      <workItem from="1582822324352" duration="651000" />
     </task>
     <servers />
   </component>
@@ -138,9 +155,21 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="359" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1582392281557">
+    <state x="275" y="42" key="#Notifications" timestamp="1582805134917">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="359" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582392281557" />
+    <state x="275" y="42" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1582805134917" />
+    <state x="363" y="119" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582805050129">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="363" y="119" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1582805050129" />
+    <state x="92" y="92" width="1182" height="584" key="DiffContextDialog" timestamp="1582804192410">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1582804192410" />
+    <state x="359" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1582822594007">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="359" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582822594007" />
   </component>
 </project>
