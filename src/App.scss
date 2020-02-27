@@ -16,8 +16,16 @@ html * {
   padding: 0;
 }
 
+$desktop: 734px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
 body {
-  font-family: "Catamaran", "sans-serif";
+  font-family: 'Catamaran', 'sans-serif';
   line-height: 1.6;
   background-color: #e5e5e5;
   color: var(--text-color);
@@ -49,7 +57,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .phone-links ul {
@@ -250,6 +258,7 @@ img {
   left: -10%;
 }
 
+
 @keyframes aaa {
   0% {
     left: -110%;
@@ -264,6 +273,7 @@ img {
     left: -10%;
   }
 }
+
 .skills-set {
   display: grid;
   grid-template-columns: auto;
@@ -271,9 +281,8 @@ img {
   justify-content: center;
   margin-top: 8px;
   margin-bottom: 16px;
-}
-@media (min-width: 734px) {
-  .skills-set {
+
+  @include desktop {
     grid-template-columns: 120px 140px 120px 120px;
     grid-column-gap: 20px;
   }
@@ -342,28 +351,34 @@ img {
   text-decoration: underline;
 }
 
-.education p {
-  text-align: left;
-}
-.education a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-.education a:hover {
-  text-decoration: underline;
-}
-@media (min-width: 734px) {
-  .education p {
-    text-align: center;
+.education {
+  p {
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color)
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @include desktop {
+    p {
+      text-align: center;
+    }
   }
 }
 
-@media (min-width: 734px) {
-  .download-btn {
+.download-btn {
+  @include desktop {
     display: flex;
     justify-content: center;
   }
 }
+
 
 .fixed {
   position: fixed;
@@ -418,26 +433,32 @@ img {
   padding: 0 8px;
 }
 
-form.go-bottom input, form.go-bottom textarea {
-  padding: 12px 12px 12px 12px;
-}
-form.go-bottom label {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-@media (min-width: 734px) {
-  form.go-bottom div {
-    display: flex;
-    justify-content: center;
+form.go-bottom {
+  input, textarea {
+    padding: 12px 12px 12px 12px;
   }
-  form.go-bottom input, form.go-bottom textarea {
-    width: 50%;
+
+  label {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
-  form.go-bottom label {
-    width: 50%;
-    left: 25%;
+
+  @include desktop {
+    div {
+      display: flex;
+      justify-content: center;
+    }
+
+    input, textarea {
+      width: 50%;
+    }
+
+    label {
+      width: 50%;
+      left: 25%;
+    }
   }
 }
 
@@ -469,6 +490,7 @@ form textarea {
   height: 100px;
 }
 
+
 form label {
   transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
   position: absolute;
@@ -498,6 +520,7 @@ form input:focus + label, form textarea:focus + label {
   text-transform: uppercase;
 }
 
+
 form.go-bottom input:focus, form.go-bottom textarea:focus {
   padding: 8px 6px 25px 6px;
 }
@@ -512,13 +535,13 @@ form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
   display: flex;
   flex-direction: column;
   height: 25vh;
-}
-.form-btns button {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-@media (min-width: 734px) {
-  .form-btns {
+
+  button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  @include desktop {
     display: grid !important;
     grid-template-columns: 250px 250px;
     grid-column-gap: 35px;
@@ -603,6 +626,7 @@ form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
 .service-desc {
   font-size: 14px;
 }
+
 
 /* Footer */
 footer {
@@ -781,5 +805,3 @@ footer svg {
 .def-color {
   color: #666;
 }
-
-/*# sourceMappingURL=App.css.map */

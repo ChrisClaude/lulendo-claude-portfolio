@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-import claude_pic from "./../assets/img/claudes_pic2.jpg";
+import lead_manager from "./../assets/img/leadmanager_portfolio.PNG";
 import mypic from "./../assets/img/mypic.jpeg";
+import mission_amei from "./../assets/img/mission_amei_portfolio.PNG";
+import lulendo_site from "./../assets/img/lulendo_site.PNG";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import chsarp from "./../assets/img/c-sharp.svg";
 import black_man from "./../assets/img/black_man_software_developer.jpg";
@@ -68,8 +70,9 @@ class Content extends Component {
                             icon={['fab', 'twitter']} className="social-icons"/></a>
                     </div>
                     <p>I am a software developer that specializes in Python/Django. I also work on .NET Core with C# to
-                        develop web and mobile apps. I grow every day with the different development tasks that I face. Also, my aim is
-                    to develop as a software developer in order to build amazing software for the world.</p>
+                        develop web and mobile apps. I grow every day with the different development tasks that I face.
+                        Also, my aim is
+                        to develop as a software developer in order to build amazing software for the world.</p>
                     <div className="skills-box">
                         <h3 className="text-center">SKILLS & PROJECTS</h3>
                         <div className="skills-set">
@@ -95,7 +98,7 @@ class Content extends Component {
                             <div id="python-prj" className={this.state.langClass[0].project}>
                                 <div className="card">
                                     <div className="card-header">
-                                        <img src={black_man} alt="lead manager website"/>
+                                        <img src={lead_manager} alt="lead manager website"/>
                                     </div>
                                     <div className="card-body">
                                         <h4 className="text-center">Lead Manager</h4>
@@ -108,7 +111,7 @@ class Content extends Component {
 
                                 <div className="card">
                                     <div className="card-header">
-                                        <img src={black_man} alt="lead manager website"/>
+                                        <img src={mission_amei} alt="lead manager website"/>
                                     </div>
                                     <div className="card-body">
                                         <h4 className="text-center">Mission Amei</h4>
@@ -123,7 +126,7 @@ class Content extends Component {
                             <div id="javascript-prj" className={this.state.langClass[1].project}>
                                 <div className="card">
                                     <div className="card-header">
-                                        <img src={black_man} alt="lead manager website"/>
+                                        <img src={lulendo_site} alt="Lulendo site"/>
                                     </div>
                                     <div className="card-body">
                                         <h4 className="text-center">Lulendo Portfolio</h4>
@@ -168,16 +171,22 @@ class Content extends Component {
                     </div>
                     <div className="education">
                         <h3 className="text-center">EDUCATION</h3>
-                        <i>2018 - 2020</i> - <span>Bachelor of Technology in Application Development</span>
-                        <p><a href="https://www.cput.ac.za/" target="_blank" rel="noopener noreferrer">Cape Peninsula
-                            University of Technology</a></p>
-                        <i>2015</i> - <span>Matric</span>
-                        <p><a href="https://www.facebook.com/pages/category/Elementary-School/Ecole-Priv%C3%A9e-Fernand-Nathan-688872191125422/"
-                              target="_blank" rel="noopener noreferrer">Fernand Nathan</a></p>
+                        <div>
+                            <p><i>2018 - 2020</i> - <span>Bachelor of Technology in Application Development</span></p>
+                            <p><a href="https://www.cput.ac.za/" target="_blank" rel="noopener noreferrer">Cape
+                                Peninsula
+                                University of Technology</a></p>
+                        </div>
+                        <div>
+                            <p><i>2015</i> - <span>Matric</span></p>
+                            <p><a
+                                href="https://www.facebook.com/pages/category/Elementary-School/Ecole-Priv%C3%A9e-Fernand-Nathan-688872191125422/"
+                                target="_blank" rel="noopener noreferrer">Fernand Nathan</a></p>
+                        </div>
                     </div>
-                    <div>
+                    <div className="download-btn">
                         <a href="https://drive.google.com/uc?authuser=0&id=1MrHNZjn2zPfwtQuJji8FfhdxW0-p3qpv&export=download"
-                           className="btn btn-primary default-ver-margin" >
+                           className="btn btn-primary default-ver-margin">
                             <FontAwesomeIcon icon="download"/> Download Resume
                         </a>
                     </div>
@@ -188,8 +197,9 @@ class Content extends Component {
                     <div className="form-card">
                         <h3 className="text-center" id="contact">CONTACT</h3>
                         <p className="text-center">We'll respond in less than 48 hours</p>
-                        <form className="go-bottom" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-                            <input type="hidden" name="form-name" value="contact" />
+                        <form className="go-bottom" name="contact" method="POST" data-netlify-recaptcha="true"
+                              data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact"/>
                             <div>
                                 <input type="text" name="name" id="name" required/>
                                 <label htmlFor="name">First name...</label>
@@ -199,11 +209,11 @@ class Content extends Component {
                                 <label htmlFor="email">Email...</label>
                             </div>
                             <div>
-                                <textarea name="message" id="message" required />
+                                <textarea name="message" id="message" required/>
                                 <label htmlFor="message">Message</label>
                             </div>
                             <div>
-                                <div data-netlify-recaptcha="true" />
+                                <div data-netlify-recaptcha="true"/>
                             </div>
                             <div className="form-btns">
                                 <button className="btn btn-primary" type="submit"><FontAwesomeIcon

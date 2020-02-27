@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="767fb00f-6167-4401-be43-b414dbe22993" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/Claude_s_CV.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/century_airlines.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/mypic.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Christ.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Christ.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/leadmanager_portfolio.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/lulendo_site.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/mission_amei_portfolio.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +57,20 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\assets\img" />
-      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\img" />
-      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\assets" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\assets\img" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\views" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\views\About" />
       <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\components\Layout" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\assets\img" />
+      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ\src\img" />
+      <recent name="C:\Users\Christ\WebstormProjects\lulendo-claude-christ" />
     </key>
   </component>
   <component name="RunManager">
@@ -131,7 +130,7 @@
       <workItem from="1582516928018" duration="443000" />
       <workItem from="1582603915870" duration="595000" />
       <workItem from="1582803155080" duration="8831000" />
-      <workItem from="1582822324352" duration="651000" />
+      <workItem from="1582822324352" duration="9762000" />
     </task>
     <servers />
   </component>
@@ -167,6 +166,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="92" y="92" width="1182" height="584" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1582804192410" />
+    <state x="318" y="156" key="EditFileWatcherDialog" timestamp="1582826630714">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="318" y="156" key="EditFileWatcherDialog/0.0.1366.768@0.0.1366.768" timestamp="1582826630714" />
+    <state x="184" y="26" key="SettingsEditor" timestamp="1582826622904">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582826622904" />
     <state x="359" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1582822594007">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
