@@ -13,7 +13,9 @@ import {
     faObjectUngroup,
     faPaintBrush,
     faPaperPlane,
-    faTimes
+    faTimes,
+    faArrowAltCircleRight,
+    faArrowAltCircleLeft
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -28,7 +30,8 @@ import Contact from "./views/Contact";
 import Articles from "./views/Articles";
 import NavBar from "./components/NavBar";
 
-library.add(fab, faBars, faDownload, faPaperPlane, faTimes, faPaintBrush, faCode, faObjectUngroup, faBrush, faDatabase);
+library.add(fab, faBars, faDownload, faPaperPlane, faTimes, faPaintBrush, faCode, faObjectUngroup, faBrush, faDatabase,
+    faArrowAltCircleLeft, faArrowAltCircleRight);
 
 class App extends Component {
 

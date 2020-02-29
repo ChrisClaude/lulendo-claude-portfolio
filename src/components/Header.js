@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import NavBar from "./NavBar";
-import PropTypes from "prop-types";
 
 class Header extends Component {
 

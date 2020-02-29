@@ -6,7 +6,6 @@ class NavBar extends Component {
 
     state = {
         phoneLinks: "phone-links close",
-        // phoneLinks: "phone-links",
     };
 
 

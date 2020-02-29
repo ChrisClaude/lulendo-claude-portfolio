@@ -14,7 +14,8 @@ class Content extends Component {
         langClass: [{label: "skills-lang text-center selected", project: ""},
             {label: "skills-lang text-center", project: "hide"},
             {label: "skills-lang text-center", project: "hide"},
-            {label: "skills-lang text-center", project: "hide"}]
+            {label: "skills-lang text-center", project: "hide"}],
+        langValue: {id:"python", icon:"python", idNum: 0}
     };
 
     handleLanguageClick = (e) => {
@@ -37,6 +38,11 @@ class Content extends Component {
     };
 
     toggleClass(idNum) {
+        let langClass = this.getLangClass(idNum);
+        this.setState(langClass);
+    }
+
+    getLangClass(idNum) {
         let langClass = this.state.langClass;
         const size = langClass.length;
         for (let i = 0; i < size; i++) {
@@ -48,10 +54,65 @@ class Content extends Component {
             langClass[i].label = "skills-lang text-center";
             langClass[i].project = "hide";
         }
-        this.setState(langClass);
+        return langClass;
+    }
+
+    handleNavGallery(directionNumber) {
+        const id_ = this.state.langValue.id;
+        let id;
+        let icon;
+        let idNum;
+        if (directionNumber === 1) {
+            if (id_ === "python") {
+                id = "javascript";
+                icon = "js-square";
+                idNum = 1;
+            }
+            else if (id_ === "javascript"){
+                id = "csharp";
+                icon = "code";
+                idNum = 2;
+            }
+            else if (id_ === "csharp") {
+                id = "java";
+                icon = "java";
+                idNum = 3;
+            }
+            else if (id_ === "java") {
+                id = "python";
+                icon = "python";
+                idNum = 0;
+            }
+        } else {
+            if (id_ === "python"){
+                id = "java";
+                icon = "java";
+                idNum = 3;
+            }
+            else if (id_ === "java"){
+                id = "csharp";
+                icon = "code";
+                idNum = 2;
+            }
+            else if (id_ === "csharp"){
+                id = "javascript";
+                icon = "js-square";
+                idNum = 1;
+            }
+            else if (id_ === "javascript") {
+                id = "python";
+                icon = "python";
+                idNum = 0;
+            }
+        }
+
+        let langClass = this.getLangClass(idNum);
+        this.setState({langClass, langValue: {id, icon, idNum}});
     }
 
     render() {
+        const prefix = this.state.langValue.icon === 'code'? "fas" : "fab";
+
         return (
             <section className="content">
                 <div className="image-box">
@@ -75,6 +136,22 @@ class Content extends Component {
                         to develop as a software developer in order to build amazing software for the world.</p>
                     <div className="skills-box">
                         <h3 className="text-center">SKILLS & PROJECTS</h3>
+                        <div className="click-through">
+                            <button onClick={() => this.handleNavGallery(-1)}><FontAwesomeIcon
+                                icon="arrow-alt-circle-left"/></button>
+                            <span>Click through the gallery</span>
+                            <button onClick={() => this.handleNavGallery(1)}><FontAwesomeIcon
+                                icon="arrow-alt-circle-right"/></button>
+                        </div>
+
+                        <div className="skills-set-phone">
+                            <button className={this.state.langClass[this.state.langValue.idNum].label}
+                                    onClick={() => console.log("click start")}>
+                                 <FontAwesomeIcon icon={[prefix, this.state.langValue.icon]} className="ic-lang"/>
+                                <h4 id={this.state.langValue.id}>{this.state.langValue.id.charAt(0).toUpperCase() + this.state.langValue.id.slice(1)}</h4>
+                            </button>
+                        </div>
+
                         <div className="skills-set">
                             <div className={this.state.langClass[0].label}>
                                 <FontAwesomeIcon icon={['fab', 'python']} className="ic-lang"/>

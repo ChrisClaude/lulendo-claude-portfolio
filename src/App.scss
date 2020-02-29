@@ -275,18 +275,60 @@ img {
 }
 
 .skills-set {
-  display: grid;
-  grid-template-columns: auto;
-  grid-row-gap: 12px;
-  justify-content: center;
-  margin-top: 8px;
-  margin-bottom: 16px;
+  display: none;
+  width: 0;
+  overflow: hidden;
 
   @include desktop {
+    display: grid;
+    width: 100%;
+    margin: 8px 0 16px 0;
     grid-template-columns: 120px 140px 120px 120px;
     grid-column-gap: 20px;
+    justify-content: center;
+    height: 130px;
+    overflow: hidden;
   }
 }
+
+.skills-set-phone {
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+
+  button {
+    width: 100%;
+    border: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.click-through {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+
+  button {
+    position: relative;
+    margin: 0 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  svg {
+    color: var(--primary-color);
+    font-size: 25px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
 
 #python, #java, #javascript, #csharp {
   width: 100%;
@@ -655,6 +697,10 @@ footer svg {
   color: #333333;
   display: grid;
   grid-template-columns: auto;
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .copyright {
