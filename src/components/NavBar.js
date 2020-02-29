@@ -26,10 +26,11 @@ class NavBar extends Component {
                 <div className={this.state.phoneLinks}>
                     <span className="times-icon" onClick={this.handleNavClicks}><FontAwesomeIcon icon="times"/></span>
                     <ul>
-                        <li><Link to="/services" className="navlinks">Services</Link></li>
-                        <li><Link to="/about" className="navlinks">About</Link></li>
-                        <li><Link to="/contact" className="navlinks">Contact</Link></li>
-                        <li><Link to="/articles" className="navlinks">Articles</Link></li>
+                        <li><Link to="/" className="navlinks">Home</Link></li>
+                        <li><Link to="/" className="navlinks">Services</Link></li>
+                        <li><Link to="/" className="navlinks">About</Link></li>
+                        <li><Link to="/" className="navlinks">Contact</Link></li>
+                        <li><Link to="/" className="navlinks">Articles</Link></li>
                     </ul>
                 </div>
             </nav>

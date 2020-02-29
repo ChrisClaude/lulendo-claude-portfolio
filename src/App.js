@@ -28,7 +28,6 @@ import Services from "./views/Services";
 import Footer from "./components/Footer";
 import Contact from "./views/Contact";
 import Articles from "./views/Articles";
-import NavBar from "./components/NavBar";
 
 library.add(fab, faBars, faDownload, faPaperPlane, faTimes, faPaintBrush, faCode, faObjectUngroup, faBrush, faDatabase,
     faArrowAltCircleLeft, faArrowAltCircleRight);
@@ -47,7 +46,7 @@ class App extends Component {
                         <Route exact path="/about" component={About}/>
                         <Route exact path="/services" render={props => (
                             <Fragment>
-                                <NavBar />
+                                <Header />
                                 <Services/>
                             </Fragment>
                         )}/>

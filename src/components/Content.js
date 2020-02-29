@@ -15,7 +15,7 @@ class Content extends Component {
             {label: "skills-lang text-center", project: "hide"},
             {label: "skills-lang text-center", project: "hide"},
             {label: "skills-lang text-center", project: "hide"}],
-        langValue: {id:"python", icon:"python", idNum: 0}
+        langValue: {id: "python", icon: "python", idNum: 0}
     };
 
     handleLanguageClick = (e) => {
@@ -67,39 +67,33 @@ class Content extends Component {
                 id = "javascript";
                 icon = "js-square";
                 idNum = 1;
-            }
-            else if (id_ === "javascript"){
+            } else if (id_ === "javascript") {
                 id = "csharp";
                 icon = "code";
                 idNum = 2;
-            }
-            else if (id_ === "csharp") {
+            } else if (id_ === "csharp") {
                 id = "java";
                 icon = "java";
                 idNum = 3;
-            }
-            else if (id_ === "java") {
+            } else if (id_ === "java") {
                 id = "python";
                 icon = "python";
                 idNum = 0;
             }
         } else {
-            if (id_ === "python"){
+            if (id_ === "python") {
                 id = "java";
                 icon = "java";
                 idNum = 3;
-            }
-            else if (id_ === "java"){
+            } else if (id_ === "java") {
                 id = "csharp";
                 icon = "code";
                 idNum = 2;
-            }
-            else if (id_ === "csharp"){
+            } else if (id_ === "csharp") {
                 id = "javascript";
                 icon = "js-square";
                 idNum = 1;
-            }
-            else if (id_ === "javascript") {
+            } else if (id_ === "javascript") {
                 id = "python";
                 icon = "python";
                 idNum = 0;
@@ -111,7 +105,8 @@ class Content extends Component {
     }
 
     render() {
-        const prefix = this.state.langValue.icon === 'code'? "fas" : "fab";
+        const {langClass, langValue} = this.state;
+        const prefix = langValue.icon === 'code' ? "fas" : "fab";
 
         return (
             <section className="content">
@@ -143,36 +138,33 @@ class Content extends Component {
                             <button onClick={() => this.handleNavGallery(1)}><FontAwesomeIcon
                                 icon="arrow-alt-circle-right"/></button>
                         </div>
-
                         <div className="skills-set-phone">
-                            <button className={this.state.langClass[this.state.langValue.idNum].label}
-                                    onClick={() => console.log("click start")}>
-                                 <FontAwesomeIcon icon={[prefix, this.state.langValue.icon]} className="ic-lang"/>
-                                <h4 id={this.state.langValue.id}>{this.state.langValue.id.charAt(0).toUpperCase() + this.state.langValue.id.slice(1)}</h4>
+                            <button className={langClass[langValue.idNum].label}>
+                                <FontAwesomeIcon icon={[prefix, langValue.icon]} className="ic-lang"/>
+                                <h4 id={langValue.id}>{langValue.id.charAt(0).toUpperCase() + langValue.id.slice(1)}</h4>
                             </button>
                         </div>
-
                         <div className="skills-set">
-                            <div className={this.state.langClass[0].label}>
+                            <button id="python" className={langClass[0].label}  onClick={this.handleLanguageClick}>
                                 <FontAwesomeIcon icon={['fab', 'python']} className="ic-lang"/>
-                                <h4 id="python" onClick={this.handleLanguageClick}>Python</h4>
-                            </div>
-                            <div className={this.state.langClass[1].label}>
+                                <h4>Python</h4>
+                            </button>
+                            <button id="javascript" className={langClass[1].label} onClick={this.handleLanguageClick}>
                                 <FontAwesomeIcon icon={['fab', 'js-square']} className="ic-lang"/>
-                                <h4 id="javascript" onClick={this.handleLanguageClick}>JavaScript</h4>
-                            </div>
-                            <div className={this.state.langClass[2].label}>
+                                <h4>JavaScript</h4>
+                            </button>
+                            <button id="csharp" className={langClass[2].label} onClick={this.handleLanguageClick}>
                                 <img src={chsarp} alt="c# logo" className="ic-lang"
                                      style={{maxWidth: 55, maxHeight: 55}}/>
-                                <h4 id="csharp" onClick={this.handleLanguageClick}>C#</h4>
-                            </div>
-                            <div className={this.state.langClass[3].label}>
+                                <h4>C#</h4>
+                            </button>
+                            <button id="java" className={langClass[3].label} onClick={this.handleLanguageClick}>
                                 <FontAwesomeIcon icon={['fab', 'java']} className="ic-lang" id="java-ic"/>
-                                <h4 id="java" onClick={this.handleLanguageClick}>Java</h4>
-                            </div>
+                                <h4>Java</h4>
+                            </button>
                         </div>
                         <div className="gallery">
-                            <div id="python-prj" className={this.state.langClass[0].project}>
+                            <div id="python-prj" className={langClass[0].project}>
                                 <div className="card">
                                     <div className="card-header">
                                         <img src={lead_manager} alt="lead manager website"/>
@@ -200,7 +192,7 @@ class Content extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div id="javascript-prj" className={this.state.langClass[1].project}>
+                            <div id="javascript-prj" className={langClass[1].project}>
                                 <div className="card">
                                     <div className="card-header">
                                         <img src={lulendo_site} alt="Lulendo site"/>
@@ -214,7 +206,7 @@ class Content extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div id="csharp-prj" className={this.state.langClass[2].project}>
+                            <div id="csharp-prj" className={langClass[2].project}>
                                 <div className="card">
                                     <div className="card-header">
                                         <img src={century_airlines} alt="lead manager website"/>
@@ -229,7 +221,7 @@ class Content extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div id="java-prj" className={this.state.langClass[3].project}>
+                            <div id="java-prj" className={langClass[3].project}>
                                 <div className="card">
                                     <div className="card-header">
                                         <img src={black_man} alt="lead manager website"/>

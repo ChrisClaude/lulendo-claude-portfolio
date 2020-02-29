@@ -269,6 +269,10 @@ img {
   width: 0;
   overflow: hidden;
 }
+.skills-set button {
+  border: none;
+  outline: none;
+}
 @media (min-width: 734px) {
   .skills-set {
     display: grid;

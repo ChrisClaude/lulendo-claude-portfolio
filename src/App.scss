@@ -279,6 +279,11 @@ img {
   width: 0;
   overflow: hidden;
 
+  button {
+    border: none;
+    outline: none;
+  }
+
   @include desktop {
     display: grid;
     width: 100%;
