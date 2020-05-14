@@ -16,8 +16,16 @@ html * {
   padding: 0;
 }
 
+$desktop: 734px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
 body {
-  font-family: "Catamaran", "sans-serif";
+  font-family: 'Catamaran', 'sans-serif';
   line-height: 1.6;
   background-color: #e5e5e5;
   color: var(--text-color);
@@ -26,7 +34,7 @@ body {
 
 /*Header*/
 header {
-  background-image: url("./assets/img/bg4.jpg");
+  background-image: url("../assets/img/bg4.jpg");
   min-height: 90vh;
   padding-top: 22px;
   overflow: hidden;
@@ -49,7 +57,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .phone-links ul {
@@ -250,6 +258,7 @@ img {
   left: -10%;
 }
 
+
 @keyframes aaa {
   0% {
     left: -110%;
@@ -264,17 +273,18 @@ img {
     left: -10%;
   }
 }
+
 .skills-set {
   display: none;
   width: 0;
   overflow: hidden;
-}
-.skills-set button {
-  border: none;
-  outline: none;
-}
-@media (min-width: 734px) {
-  .skills-set {
+
+  button {
+    border: none;
+    outline: none;
+  }
+
+  @include desktop {
     display: grid;
     width: 100%;
     margin: 8px 0 16px 0;
@@ -290,13 +300,13 @@ img {
   width: 140px;
   margin-left: auto;
   margin-right: auto;
-}
-.skills-set-phone button {
-  width: 100%;
-  border: none;
-}
-@media (min-width: 734px) {
-  .skills-set-phone {
+
+  button {
+    width: 100%;
+    border: none;
+  }
+
+  @include desktop {
     display: none;
   }
 }
@@ -305,23 +315,25 @@ img {
   display: flex;
   justify-content: center;
   padding: 12px 0;
-}
-.click-through button {
-  position: relative;
-  margin: 0 12px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.click-through svg {
-  color: var(--primary-color);
-  font-size: 25px;
-}
-@media (min-width: 734px) {
-  .click-through {
+
+  button {
+    position: relative;
+    margin: 0 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  svg {
+    color: var(--primary-color);
+    font-size: 25px;
+  }
+
+  @include desktop {
     display: none;
   }
 }
+
 
 #python, #java, #javascript, #csharp {
   width: 100%;
@@ -386,28 +398,34 @@ img {
   text-decoration: underline;
 }
 
-.education p {
-  text-align: left;
-}
-.education a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-.education a:hover {
-  text-decoration: underline;
-}
-@media (min-width: 734px) {
-  .education p {
-    text-align: center;
+.education {
+  p {
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color)
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @include desktop {
+    p {
+      text-align: center;
+    }
   }
 }
 
-@media (min-width: 734px) {
-  .download-btn {
+.download-btn {
+  @include desktop {
     display: flex;
     justify-content: center;
   }
 }
+
 
 .fixed {
   position: fixed;
@@ -462,26 +480,32 @@ img {
   padding: 0 8px;
 }
 
-form.go-bottom input, form.go-bottom textarea {
-  padding: 12px 12px 12px 12px;
-}
-form.go-bottom label {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-@media (min-width: 734px) {
-  form.go-bottom div {
-    display: flex;
-    justify-content: center;
+form.go-bottom {
+  input, textarea {
+    padding: 12px 12px 12px 12px;
   }
-  form.go-bottom input, form.go-bottom textarea {
-    width: 50%;
+
+  label {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
-  form.go-bottom label {
-    width: 50%;
-    left: 25%;
+
+  @include desktop {
+    div {
+      display: flex;
+      justify-content: center;
+    }
+
+    input, textarea {
+      width: 50%;
+    }
+
+    label {
+      width: 50%;
+      left: 25%;
+    }
   }
 }
 
@@ -513,6 +537,7 @@ form textarea {
   height: 100px;
 }
 
+
 form label {
   transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
   position: absolute;
@@ -542,6 +567,7 @@ form input:focus + label, form textarea:focus + label {
   text-transform: uppercase;
 }
 
+
 form.go-bottom input:focus, form.go-bottom textarea:focus {
   padding: 8px 6px 25px 6px;
 }
@@ -556,13 +582,13 @@ form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
   display: flex;
   flex-direction: column;
   height: 25vh;
-}
-.form-btns button {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-@media (min-width: 734px) {
-  .form-btns {
+
+  button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  @include desktop {
     display: grid !important;
     grid-template-columns: 250px 250px;
     grid-column-gap: 35px;
@@ -648,6 +674,7 @@ form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
   font-size: 14px;
 }
 
+
 /* Footer */
 footer {
   padding-bottom: 25px;
@@ -675,9 +702,8 @@ footer svg {
   color: #333333;
   display: grid;
   grid-template-columns: auto;
-}
-@media (min-width: 734px) {
-  .bottom-links {
+
+  @include desktop {
     display: flex;
   }
 }
@@ -698,6 +724,7 @@ footer svg {
   color: white;
   cursor: pointer;
   border-radius: 4px;
+  display: inline-block;
 }
 
 #ann-box-btn:hover {
@@ -831,4 +858,4 @@ footer svg {
   color: #666;
 }
 
-/*# sourceMappingURL=App.css.map */
+@import "custom-semantic-ui";

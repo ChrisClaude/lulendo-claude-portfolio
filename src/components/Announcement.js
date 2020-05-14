@@ -6,17 +6,11 @@ class Announcement extends Component {
         style: "text-center show"
     };
 
-    handleOnClick = () => {
-        let style = this.state.style;
-        style = style.search("show") > -1 ? "text-center hide" : "text-center show";
-        this.setState({style});
-    };
-
     render() {
         return (
             <div className={this.state.style} id="ann-box">
                 <span>{this.props.message}</span>
-                <button id="ann-box-btn" onClick={this.handleOnClick}>OK</button>
+                <a id="ann-box-btn" href="https://cchris.netlify.app">Go</a>
             </div>
         );
     }

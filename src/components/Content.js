@@ -7,15 +7,37 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import chsarp from "./../assets/img/c-sharp.svg";
 import black_man from "./../assets/img/black_man_software_developer.jpg";
 import century_airlines from "./../assets/img/century_airlines.PNG";
+import { Button, Card, Divider, Image, Placeholder } from 'semantic-ui-react';
+
+const cards = [
+    {
+        avatar: '/images/avatar/large/helen.jpg',
+        date: 'Joined in 2013',
+        header: 'Helen',
+        description: 'Primary Contact',
+    },
+    {
+        avatar: '/images/avatar/large/matthew.png',
+        date: 'Joined in 2013',
+        header: 'Matthew',
+        description: 'Primary Contact',
+    },
+    {
+        avatar: '/images/avatar/large/molly.png',
+        date: 'Joined in 2013',
+        header: 'Molly',
+        description: 'Primary Contact',
+    },
+];
 
 class Content extends Component {
-
     state = {
         langClass: [{label: "skills-lang text-center selected", project: ""},
             {label: "skills-lang text-center", project: "hide"},
             {label: "skills-lang text-center", project: "hide"},
             {label: "skills-lang text-center", project: "hide"}],
-        langValue: {id: "python", icon: "python", idNum: 0}
+        langValue: {id: "python", icon: "python", idNum: 0},
+        loading: true
     };
 
     handleLanguageClick = (e) => {
@@ -105,7 +127,7 @@ class Content extends Component {
     }
 
     render() {
-        const {langClass, langValue} = this.state;
+        const {langClass, langValue, loading} = this.state;
         const prefix = langValue.icon === 'code' ? "fas" : "fab";
 
         return (
@@ -163,11 +185,20 @@ class Content extends Component {
                                 <h4>Java</h4>
                             </button>
                         </div>
+
+
                         <div className="gallery">
                             <div id="python-prj" className={langClass[0].project}>
                                 <div className="card">
                                     <div className="card-header">
-                                        <img src={lead_manager} alt="lead manager website"/>
+                                        {loading ? (
+                                            <Placeholder style={{width: '100%'}}>
+                                                <Placeholder.Image rectangular />
+                                            </Placeholder>
+                                        ) : (
+                                            <Image src={lead_manager} />
+                                        )}
+                                        {/*<img src={lead_manager} alt="lead manager website"/>*/}
                                     </div>
                                     <div className="card-body">
                                         <h4 className="text-center">Lead Manager</h4>
@@ -180,7 +211,7 @@ class Content extends Component {
 
                                 <div className="card">
                                     <div className="card-header">
-                                        <img src={mission_amei} alt="lead manager website"/>
+                                        <img src={mission_amei} alt="amei mission website"/>
                                     </div>
                                     <div className="card-body">
                                         <h4 className="text-center">Mission Amei</h4>
@@ -265,7 +296,7 @@ class Content extends Component {
                     <div className="form-card"/>
                     <div className="form-card">
                         <h3 className="text-center" id="contact">CONTACT</h3>
-                        <p className="text-center">We'll respond in less than 48 hours</p>
+                        <p className="text-center">Your message goes right to my email box</p>
                         <form className="go-bottom" name="contact" method="POST" data-netlify-recaptcha="true"
                               data-netlify="true">
                             <input type="hidden" name="form-name" value="contact"/>

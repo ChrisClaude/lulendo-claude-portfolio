@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-
+import 'semantic-ui-css/semantic.min.css';
 
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {fab} from '@fortawesome/free-brands-svg-icons';
@@ -18,10 +18,9 @@ import {
     faArrowAltCircleLeft
 } from '@fortawesome/free-solid-svg-icons';
 
-
 import Header from "./components/Header";
 import Announcement from "./components/Announcement";
-import "./App.css";
+import "./scss/App.css";
 import Content from "./components/Content";
 import About from "./views/About";
 import Services from "./views/Services";
@@ -35,7 +34,7 @@ library.add(fab, faBars, faDownload, faPaperPlane, faTimes, faPaintBrush, faCode
 class App extends Component {
 
     render() {
-        const announcement = "This website is still in development, Please contact christ.tchambila@gmail.com";
+        const announcement = "This website has been updated to cchris.netlify.app";
         return (
             <Fragment>
                 <Router>
